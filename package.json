@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile": "webpack",
+    "start": "node server.js",
     "test": "mocha test/"
   },
   "repository": {
@@ -21,8 +23,12 @@
     "babel-loader": "^7.1.2",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "express": "^4.16.2",
     "mocha": "^4.1.0",
-    "webpack": "^3.10.0"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
