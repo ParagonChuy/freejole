@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile": "webpack",
+    "populate": "node_modules/babel-cli/bin/babel-node.js",
     "start": "node server.js",
-    "test": "mocha test/"
+    "test": "mocha --compilers js:babel-core/register test/"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
     "express": "^4.16.2",
     "mocha": "^4.1.0",
     "react": "^16.2.0",
